@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIDogCatPapers · 犬猫疾病AI文献库 </title>
+    <title>AIDogCatPapers · 犬猫疾病AI文献库</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- 引入 chartjs-plugin-datalabels 用于在柱子上显示标签 -->
@@ -54,7 +54,7 @@
         <p class="text-xl md:text-2xl font-light text-blue-100 mb-1">Denghui Cao and Youshan Zhang</p>
         <!-- 作者中文翻译 -->
         <p class="text-lg text-blue-200 border-t border-blue-400 inline-block px-6 pt-2 mt-1">曹登辉 和 张有山</p>
-        <p class="text-base md:text-lg text-blue-100 max-w-2xl mx-auto mt-4">2021–2025 深度学习方法在犬猫疾病诊断、影像分析、预测建模中的学术文献全集</p>
+        <p class="text-base md:text-lg text-blue-100 max-w-2xl mx-auto mt-4">2021–2025 深度学习方法在犬猫疾病诊断、影像分析、预测建模中的学术文献全集 · 154篇全部内嵌</p>
     </section>
 
     <!-- Abstract 中英逐段 -->
@@ -109,7 +109,7 @@
             <i class="fa-solid fa-table text-blue-600"></i> Complete Papers
         </h2>
         <div class="bg-white rounded-xl shadow-sm p-4 md:p-6">
-            <p class="text-sm text-gray-500 mb-4">基于原始表格逐条收录，包含年份、题目、作者单位(简略)、国家/地区及LaTeX引用。横向滚动可查看全部字段。下方为全部154行数据。</p>
+            <p class="text-sm text-gray-500 mb-4">基于原始表格逐条收录，包含年份、题目、作者单位(简略)、国家/地区及LaTeX引用。横向滚动可查看全部字段。</p>
             <div class="overflow-x-auto w-full border rounded-lg" style="max-height:600px; overflow-y:auto">
                 <table class="paper-table w-full text-xs">
                     <thead class="sticky top-0 bg-gray-100">
@@ -131,12 +131,15 @@
         </div>
     </section>
 
-    <!-- 代码与数据获取 -->
+    <!-- 代码与数据获取 (已删除Hugging Face部分，仅保留GitHub，并强调可视化代码) -->
     <section id="code" class="mb-12 scroll-mt-20">
         <h2 class="text-2xl font-bold section-title">Code & Data Access · 代码与数据</h2>
-        <div class="bg-white rounded-xl p-6 shadow-sm flex flex-col md:flex-row gap-8 items-center">
-            <div class="flex-1"><h3 class="text-xl font-semibold mb-4">📥 数据集下载 (Hugging Face)</h3><p class="mb-4 text-gray-700">包含论文元数据、关键词、国家分布、引用格式。</p><a href="https://huggingface.co/datasets/Anonymousab/AIDogCatPapers" target="_blank" class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"><i class="fa-solid fa-download"></i> 前往 Hugging Face</a></div>
-            <div class="flex-1"><h3 class="text-xl font-semibold mb-4">🐙 GitHub 仓库</h3><p class="mb-4 text-gray-700">页面源码、处理脚本、可视化工具。欢迎⭐贡献。</p><a href="https://github.com/your-username/AIDogCatPapers" target="_blank" class="inline-flex items-center gap-2 bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition"><i class="fa-brands fa-github"></i> GitHub Repo</a></div>
+        <div class="bg-white rounded-xl p-6 shadow-sm flex flex-col items-center">
+            <div class="w-full max-w-md">
+                <h3 class="text-xl font-semibold mb-4">🐙 GitHub 仓库</h3>
+                <p class="mb-4 text-gray-700">页面源码、数据处理脚本及可视化代码。欢迎⭐贡献。</p>
+                <a href="https://github.com/your-username/AIDogCatPapers" target="_blank" class="inline-flex items-center gap-2 bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+            </div>
         </div>
     </section>
 </main>
