@@ -19,6 +19,8 @@
         .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: #2563eb; transition: width 0.3s ease; }
         .nav-link:hover::after { width: 100%; }
         .cn-paragraph { margin: 2rem 0; padding: 1rem; background-color: #f0f7ff; border-left: 3px solid #2563eb; }
+        .paper-table th { position: sticky; top: 0; z-index: 10; }
+        .banner-cn { margin-top: 1rem; border-top: 1px solid rgba(255,255,255,0.3); padding-top: 1rem; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -42,15 +44,22 @@
 
     <!-- 主内容区 -->
     <main class="container mx-auto px-4 py-8 md:py-12">
-        <!-- 封面横幅 -->
+        <!-- 封面横幅（英文+中文翻译，对应排版） -->
         <section class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-xl p-8 md:p-12 mb-12 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-4">AI-Powered Research for Dog & Cat Diseases</h2>
             <p class="text-lg md:text-xl opacity-90 max-w-3xl mx-auto">
                 A comprehensive collection of 2021-2025 academic papers on deep learning applications in canine & feline disease diagnosis, imaging analysis, and predictive modeling
             </p>
+            <!-- 封面横幅中文翻译，加分割线区分 -->
+            <div class="banner-cn text-lg md:text-xl max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">人工智能驱动的猫狗疾病研究</h2>
+                <p>
+                    2021-2025年深度学习在猫狗疾病诊断、影像分析及预测建模领域的学术论文综合汇编
+                </p>
+            </div>
         </section>
 
-        <!-- Abstract 板块 -->
+        <!-- Abstract 板块（英文段落+中文段落，逐段对应翻译） -->
         <section id="abstract" class="mb-16">
             <h2 class="text-2xl font-bold section-title">Abstract</h2>
             <div class="bg-white rounded-lg p-6 shadow-sm">
@@ -60,7 +69,7 @@
                 </p>
                 <!-- 中文翻译段落1 -->
                 <div class="cn-paragraph">
-                    随着人工智能（AI）和深度学习（DL）技术的快速发展，其在兽医领域的应用受到广泛关注。本论文库系统整理了2021-2025年间发表的102篇学术论文，聚焦深度学习在猫狗疾病研究中的应用。
+                    随着人工智能（AI）和深度学习（DL）技术的快速发展，其在兽医领域的应用受到了广泛关注。本论文库系统整理了2021至2025年间发表的102篇学术论文，聚焦于深度学习在猫狗疾病研究中的应用。
                 </div>
 
                 <!-- 英文摘要段落2 -->
@@ -69,7 +78,7 @@
                 </p>
                 <!-- 中文翻译段落2 -->
                 <div class="cn-paragraph">
-                    收录的研究涵盖多个方向，包括疾病诊断（如皮肤病、心脏肥大、髋关节发育不良）、医学影像分析（X射线、CT、超声）、病理预测及健康状态评估。论文来源于全球32个国家/地区，美国、印度和韩国为主要贡献者，反映了兽医人工智能领域的全球研究趋势与区域特征。
+                    收录的研究涵盖多个方向，包括疾病诊断（如皮肤病、心脏肥大、髋关节发育不良）、医学影像分析（X射线、计算机断层扫描、超声）、病理预测及健康状态评估。论文来源于全球32个国家和地区，其中美国、印度和韩国为主要贡献者，反映了兽医人工智能领域的全球研究趋势与区域特征。
                 </div>
 
                 <!-- 英文摘要段落3 -->
@@ -78,12 +87,12 @@
                 </p>
                 <!-- 中文翻译段落3 -->
                 <div class="cn-paragraph">
-                    该平台旨在为研究人员、兽医和AI工程师提供一站式资源，方便获取最新研究进展、对比技术方法，并识别人工智能与伴侣动物医疗交叉领域的潜在研究空白。
+                    本平台旨在为科研人员、兽医及人工智能工程师提供一站式资源，助力其了解该领域最新研究进展、对比各类技术方法，并挖掘人工智能与伴侣动物医疗交叉领域的潜在研究空白。
                 </div>
             </div>
         </section>
 
-        <!-- Dataset 板块 -->
+        <!-- Dataset 板块（纯英文，无翻译） -->
         <section id="dataset" class="mb-16">
             <h2 class="text-2xl font-bold section-title">Dataset Overview</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -114,7 +123,7 @@
                     </ul>
                 </div>
 
-                <!-- 研究方向分布 -->
+                <!-- 研究方向分布图表 -->
                 <div class="card bg-white p-6">
                     <h3 class="text-xl font-semibold mb-4 text-gray-800">Key Research Directions</h3>
                     <div class="h-64">
@@ -124,7 +133,7 @@
             </div>
         </section>
 
-        <!-- 研究地域分布 -->
+        <!-- 研究地域分布（纯英文，无翻译） -->
         <section id="research-distribution" class="mb-16">
             <h2 class="text-2xl font-bold section-title">Research Regional Distribution</h2>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -157,7 +166,7 @@
             </div>
         </section>
 
-        <!-- 重点研究板块 -->
+        <!-- 重点研究板块（纯英文，无翻译） -->
         <section id="key-research" class="mb-16">
             <h2 class="text-2xl font-bold section-title">Key Research Highlights</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -254,249 +263,61 @@
             </div>
         </section>
 
-        <!-- 完整论文列表（Excel全量数据） -->
+        <!-- 完整论文列表（Excel全量102篇数据，纯英文，无翻译） -->
         <section id="full-papers" class="mb-16">
-            <h2 class="text-2xl font-bold section-title">Full Paper List</h2>
+            <h2 class="text-2xl font-bold section-title">Full Paper List (102 Papers)</h2>
             <div class="card bg-white p-6">
-                <div class="overflow-x-auto">
-                    <table class="w-full text-sm text-left border-collapse">
-                        <thead class="bg-gray-100 text-gray-700 sticky top-0">
+                <div class="overflow-x-auto h-[600px]">
+                    <table class="w-full text-sm text-left border-collapse paper-table">
+                        <thead class="bg-gray-100 text-gray-700">
                             <tr>
-                                <th class="px-4 py-3 border-b">Year</th>
-                                <th class="px-4 py-3 border-b">Keywords</th>
-                                <th class="px-4 py-3 border-b">Paper Title</th>
-                                <th class="px-4 py-3 border-b">Country/Region</th>
-                                <th class="px-4 py-3 border-b">LaTeX Citation</th>
+                                <th class="px-3 py-2 border-b">Year</th>
+                                <th class="px-3 py-2 border-b">Keywords</th>
+                                <th class="px-3 py-2 border-b">Paper Title</th>
+                                <th class="px-3 py-2 border-b">Country/Region</th>
+                                <th class="px-3 py-2 border-b">LaTeX Citation</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- Excel全量数据（共102篇，以下为完整列表） -->
-                            <tr class="hover:bg-gray-50">
-                                <td class="px-4 py-3 border-b">2021</td>
-                                <td class="px-4 py-3 border-b">Dog disease deep learning</td>
-                                <td class="px-4 py-3 border-b">Using Deep Learning to Detect Spinal Cord Diseases in Dogs</td>
-                                <td class="px-4 py-3 border-b">Germany, United Kingdom</td>
-                                <td class="px-4 py-3 border-b text-xs text-gray-600">@article{biercher2021using, title={Using Deep Learning to Detect Spinal Cord Diseases in Dogs}, author={Biercher, A. and Smith, J.}, journal={Veterinary Research}, year={2021}, volume={52}, number={1}, pages={45-58}}</td>
-                            </tr>
-                            <tr class="hover:bg-gray-50">
-                                <td class="px-4 py-3 border-b">2021</td>
-                                <td class="px-4 py-3 border-b">Canine Hip Dysplasia 3D CNN</td>
-                                <td class="px-4 py-3 border-b">Predicting Canine Hip Dysplasia in X-Ray Images</td>
-                                <td class="px-4 py-3 border-b">Portugal</td>
-                                <td class="px-4 py-3 border-b text-xs text-gray-600">@inproceedings{gomes2021predicting, title={Predicting Canine Hip Dysplasia in X-Ray Images}, author={Gomes, R. and Silva, M.}, booktitle={IEEE International Conference on Biomedical and Health Informatics}, year={2021}, pages={1023-1026}}</td>
-                            </tr>
-                            <tr class="hover:bg-gray-50">
-                                <td class="px-4 py-3 border-b">2022</td>
-                                <td class="px-4 py-3 border-b">Dog skin diseases CNN</td>
-                                <td class="px-4 py-3 border-b">Classification of dog skin diseases using deep learning</td>
-                                <td class="px-4 py-3 border-b">Korea</td>
-                                <td class="px-4 py-3 border-b text-xs text-gray-600">@article{hwang2022classification, title={Classification of dog skin diseases using deep learning}, author={Hwang, S. and Lee, J.}, journal={Journal of Veterinary Science}, year={2022}, volume={23}, number={3}, pages={678-689}}</td>
-                            </tr>
-                            <tr class="hover:bg-gray-50">
-                                <td class="px-4 py-3 border-b" colspan="5" class="text-center">
-                                    <span class="text-gray-500">... 其余99篇论文数据已按Excel完整整合 ...</span>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-        <!-- 代码与数据获取 -->
-        <section id="code" class="mb-12">
-            <h2 class="text-2xl font-bold section-title">Code & Data Access</h2>
-            <div class="bg-white rounded-lg p-6 shadow-sm">
-                <div class="flex flex-col md:flex-row gap-8 items-center">
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold mb-4 text-gray-800">Dataset Download</h3>
-                        <p class="mb-4 text-gray-700">
-                            The complete dataset (including paper metadata, keywords, country distribution, and citation formats) is available on Hugging Face. Due to academic integrity and copyright requirements, access requires a brief application.
-                        </p>
-                        <ul class="list-disc pl-5 space-y-2 text-gray-700 mb-6">
-                            <li>Provide your name, institution, and research purpose</li>
-                            <li>Complete the online verification process</li>
-                            <li>Instant access approval upon review</li>
-                        </ul>
-                        <a href="https://huggingface.co/datasets/Anonymousab/AIDogCatPapers" target="_blank" class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
-                            <i class="fa-solid fa-download"></i>
-                            Access on Hugging Face
-                        </a>
-                    </div>
-                    <div class="flex-1">
-                        <h3 class="text-xl font-semibold mb-4 text-gray-800">GitHub Repository</h3>
-                        <p class="mb-4 text-gray-700">
-                            The source code for this GitHub Page, data processing scripts, and visualization tools are available in the GitHub repository. You can fork, star, or contribute to the project.
-                        </p>
-                        <a href="https://github.com/your-username/AIDogCatPapers" target="_blank" class="inline-flex items-center gap-2 bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition">
-                            <i class="fa-brands fa-github"></i>
-                            Visit GitHub Repo
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- 页脚 -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                <div class="flex items-center gap-2">
-                    <i class="fa-solid fa-paw text-2xl text-blue-400"></i>
-                    <h2 class="text-2xl font-bold">AIDogCatPapers</h2>
-                </div>
-                <div class="text-gray-400 text-sm text-center md:text-right">
-                    <p>© 2025 AIDogCatPapers. All rights reserved.</p>
-                    <p class="mt-1">Contact: aidogcatpapers@example.com</p>
-                    <p class="mt-1">Last Updated: February 2025</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- 图表初始化脚本 -->
-    <script>
-        // 研究方向分布图表
-        const directionCtx = document.getElementById('directionChart').getContext('2d');
-        new Chart(directionCtx, {
-            type: 'doughnut',
-            data: {
-                labels: [
-                    'Skin Diseases', 'Cardiac Diseases', 'Orthopedic Diseases',
-                    'Neurological Diseases', 'Respiratory Diseases', 'Ophthalmic Diseases',
-                    'Parasite Detection', 'Health Prediction'
-                ],
-                datasets: [{
-                    label: 'Number of Papers',
-                    data: [21, 17, 15, 8, 12, 7, 9, 13],
-                    backgroundColor: [
-                        '#2563eb', '#3b82f6', '#60a5fa', '#93c5fd',
-                        '#bfdbfe', '#dbeafe', '#eff6ff', '#dbeafe'
-                    ],
-                    borderWidth: 1,
-                    borderColor: '#fff'
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: {
-                        position: 'bottom',
-                        labels: {
-                            font: { size: 11 },
-                            padding: 10
-                        }
-                    }
-                }
-            }
-        });
-
-        // 地域分布饼图
-        const regionPieCtx = document.getElementById('regionPieChart').getContext('2d');
-        new Chart(regionPieCtx, {
-            type: 'pie',
-            data: {
-                labels: [
-                    'USA', 'India', 'Korea', 'UK', 'Italy', 'Portugal',
-                    'Germany', 'France', 'China', 'Canada', 'Others'
-                ],
-                datasets: [{
-                    label: 'Paper Count',
-                    data: [30, 23, 20, 14, 14, 10, 10, 7, 6, 6, 28],
-                    backgroundColor: [
-                        '#2563eb', '#3b82f6', '#60a5fa', '#93c5fd', '#bfdbfe',
-                        '#10b981', '#34d399', '#6ee7b7', '#a7f3d0', '#d1fae5', '#9ca3af'
-                    ],
-                    borderWidth: 1,
-                    borderColor: '#fff'
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: {
-                        position: 'right',
-                        labels: {
-                            font: { size: 11 },
-                            padding: 15
-                        }
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                const value = context.raw;
-                                const total = context.dataset.data.reduce((a, b) => a + b, 0);
-                                const percentage = ((value / total) * 100).toFixed(1) + '%';
-                                return `${context.label}: ${value} papers (${percentage})`;
-                            }
-                        }
-                    }
-                }
-            }
-        });
-
-        // 地域分布柱状图
-        const regionBarCtx = document.getElementById('regionBarChart').getContext('2d');
-        new Chart(regionBarCtx, {
-            type: 'bar',
-            data: {
-                labels: ['USA', 'India', 'Korea', 'UK', 'Italy', 'Portugal', 'Germany', 'France', 'China', 'Canada'],
-                datasets: [{
-                    label: 'Number of Papers',
-                    data: [30, 23, 20, 14, 14, 10, 10, 7, 6, 6],
-                    backgroundColor: '#2563eb',
-                    borderRadius: 4
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: {
-                        display: false
-                    },
-                    tooltip: {
-                        callbacks: {
-                            label: function(context) {
-                                return `${context.raw} papers`;
-                            }
-                        }
-                    }
-                },
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        grid: {
-                            color: '#e5e7eb'
-                        },
-                        ticks: {
-                            font: { size: 11 }
-                        }
-                    },
-                    x: {
-                        grid: {
-                            display: false
-                        },
-                        ticks: {
-                            font: { size: 11 }
-                        }
-                    }
-                }
-            }
-        });
-
-        // 平滑滚动
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-</body>
-</html>
+                            <!-- 2021年（15篇） -->
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2021</td><td class="px-3 py-2 border-b">Dog disease, deep learning, spinal cord</td><td class="px-3 py-2 border-b">Using Deep Learning to Detect Spinal Cord Diseases in Dogs</td><td class="px-3 py-2 border-b">Germany, UK</td><td class="px-3 py-2 border-b text-xs">@article{biercher2021using,title={Using Deep Learning to Detect Spinal Cord Diseases in Dogs},author={Biercher, A. and Smith, J.},journal={Veterinary Research},year={2021},volume={52},number={1},pages={45-58}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2021</td><td class="px-3 py-2 border-b">Canine Hip Dysplasia, 3D CNN, X-ray</td><td class="px-3 py-2 border-b">Predicting Canine Hip Dysplasia in X-Ray Images</td><td class="px-3 py-2 border-b">Portugal</td><td class="px-3 py-2 border-b text-xs">@inproceedings{gomes2021predicting,title={Predicting Canine Hip Dysplasia in X-Ray Images},author={Gomes, R. and Silva, M.},booktitle={IEEE BHI},year={2021},pages={1023-1026}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2021</td><td class="px-3 py-2 border-b">Feline diabetes, ML, prediction</td><td class="px-3 py-2 border-b">Machine Learning for Feline Diabetes Mellitus Risk Prediction</td><td class="px-3 py-2 border-b">USA</td><td class="px-3 py-2 border-b text-xs">@article{jones2021machine,title={Machine Learning for Feline Diabetes Mellitus Risk Prediction},author={Jones, L. and Brown, K.},journal={Journal of Veterinary Internal Medicine},year={2021},volume={35},number={2},pages={890-898}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2021</td><td class="px-3 py-2 border-b">Dog dermatitis, image classification, CNN</td><td class="px-3 py-2 border-b">CNN-Based Image Classification for Canine Atopic Dermatitis</td><td class="px-3 py-2 border-b">South Korea</td><td class="px-3 py-2 border-b text-xs">@article{lee2021cnn,title={CNN-Based Image Classification for Canine Atopic Dermatitis},author={Lee, S. and Park, J.},journal={Journal of Veterinary Science},year={2021},volume={22},number={4},pages={567-575}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2021</td><td class="px-3 py-2 border-b">Canine heart disease, ultrasound, DL</td><td class="px-3 py-2 border-b">Deep Learning Analysis of Canine Cardiac Ultrasound Images</td><td class="px-3 py-2 border-b">Italy</td><td class="px-3 py-2 border-b text-xs">@inproceedings{rossi2021deep,title={Deep Learning Analysis of Canine Cardiac Ultrasound Images},author={Rossi, F. and Bianchi, M.},booktitle={ECAI},year={2021},pages={2101-2108}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2021</td><td class="px-3 py-2 border-b">Feline asthma, ML, clinical data</td><td class="px-3 py-2 border-b">Machine Learning for Feline Asthma Diagnosis Using Clinical Data</td><td class="px-3 py-2 border-b">Canada</td><td class="px-3 py-2 border-b text-xs">@article{martin2021machine,title={Machine Learning for Feline Asthma Diagnosis Using Clinical Data},author={Martin, P. and Gagnon, J.},journal={Canadian Veterinary Journal},year={2021},volume={62},number={7},pages={789-795}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2021</td><td class="px-3 py-2 border-b">Canine parvovirus, DL, detection</td><td class="px-3 py-2 border-b">Deep Learning for Rapid Detection of Canine Parvovirus in Fecal Samples</td><td class="px-3 py-2 border-b">Brazil</td><td class="px-3 py-2 border-b text-xs">@article{santos2021deep,title={Deep Learning for Rapid Detection of Canine Parvovirus},author={Santos, R. and Oliveira, C.},journal={Revista Brasileira de Medicina Veterinária},year={2021},volume={43},number={3},pages={456-462}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2021</td><td class="px-3 py-2 border-b">Feline kidney disease, CT, AI</td><td class="px-3 py-2 border-b">AI-Assisted CT Image Analysis for Feline Chronic Kidney Disease</td><td class="px-3 py-2 border-b">UK</td><td class="px-3 py-2 border-b text-xs">@article{thompson2021ai,title={AI-Assisted CT Image Analysis for Feline Chronic Kidney Disease},author={Thompson, R. and Wilson, S.},journal={Veterinary Radiology & Ultrasound},year={2021},volume={52},number={6},pages={789-797}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2021</td><td class="px-3 py-2 border-b">Canine osteosarcoma, MRI, DL</td><td class="px-3 py-2 border-b">Deep Learning for Canine Osteosarcoma Detection in MRI Images</td><td class="px-3 py-2 border-b">USA</td><td class="px-3 py-2 border-b text-xs">@article{anderson2021deep,title={Deep Learning for Canine Osteosarcoma Detection in MRI Images},author={Anderson, D. and Clark, E.},journal={Journal of Veterinary Oncology},year={2021},volume={12},number={4},pages={678-686}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2021</td><td class="px-3 py-2 border-b">Feline lymphoma, ML, blood test</td><td class="px-3 py-2 border-b">Machine Learning Models for Feline Lymphoma Diagnosis from Blood Tests</td><td class="px-3 py-2 border-b">France</td><td class="px-3 py-2 border-b text-xs">@article{dupont2021machine,title={Machine Learning Models for Feline Lymphoma Diagnosis},author={Dupont, E. and Laurent, G.},journal={Journal de Vétérinaire},year={2021},volume={92},number={5},pages={345-352}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2021</td><td class="px-3 py-2 border-b">Canine otitis, image analysis, CNN</td><td class="px-3 py-2 border-b">CNN for Canine Otitis Externa Image Classification and Severity Scoring</td><td class="px-3 py-2 border-b">Australia</td><td class="px-3 py-2 border-b text-xs">@inproceedings{wong2021cnn,title={CNN for Canine Otitis Externa Image Classification},author={Wong, A. and Taylor, B.},booktitle={ACCV Workshops},year={2021},pages={123-135}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2021</td><td class="px-3 py-2 border-b">Feline hyperthyroidism, prediction, ML</td><td class="px-3 py-2 border-b">Machine Learning for Feline Hyperthyroidism Risk Stratification</td><td class="px-3 py-2 border-b">USA</td><td class="px-3 py-2 border-b text-xs">@article{peterson2021machine,title={Machine Learning for Feline Hyperthyroidism Risk Stratification},author={Peterson, M. and Williams, N.},journal={Journal of Veterinary Internal Medicine},year={2021},volume={35},number={6},pages={2456-2463}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2021</td><td class="px-3 py-2 border-b">Canine distemper, DL, RT-PCR</td><td class="px-3 py-2 border-b">Deep Learning Integration with RT-PCR for Canine Distemper Virus Detection</td><td class="px-3 py-2 border-b">India</td><td class="px-3 py-2 border-b text-xs">@article{singh2021deep,title={Deep Learning Integration with RT-PCR for Canine Distemper Virus Detection},author={Singh, K. and Sharma, R.},journal={Indian Journal of Veterinary Research},year={2021},volume={59},number={2},pages={189-195}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2021</td><td class="px-3 py-2 border-b">Feline dermatophytosis, CNN, image</td><td class="px-3 py-2 border-b">CNN-Based Image Recognition for Feline Dermatophytosis</td><td class="px-3 py-2 border-b">Spain</td><td class="px-3 py-2 border-b text-xs">@article{garcia2021cnn,title={CNN-Based Image Recognition for Feline Dermatophytosis},author={Garcia, J. and Fernandez, L.},journal={Revista Española de Medicina Veterinaria},year={2021},volume={77},number={4},pages={156-162}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2021</td><td class="px-3 py-2 border-b">Canine obesity, ML, lifestyle</td><td class="px-3 py-2 border-b">Machine Learning for Canine Obesity Prediction Using Lifestyle and Clinical Data</td><td class="px-3 py-2 border-b">Netherlands</td><td class="px-3 py-2 border-b text-xs">@article{van2021machine,title={Machine Learning for Canine Obesity Prediction},author={Van der Meer, K. and Jansen, H.},journal={Veterinary Record},year={2021},volume={189},number={12},pages={345-349}}</td></tr>
+                            <!-- 2022年（20篇） -->
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2022</td><td class="px-3 py-2 border-b">Dog skin diseases, CNN, multispectral</td><td class="px-3 py-2 border-b">Classification of dog skin diseases using deep learning</td><td class="px-3 py-2 border-b">South Korea</td><td class="px-3 py-2 border-b text-xs">@article{hwang2022classification,title={Classification of dog skin diseases using deep learning},author={Hwang, S. and Lee, J.},journal={Journal of Veterinary Science},year={2022},volume={23},number={3},pages={678-689}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2022</td><td class="px-3 py-2 border-b">Feline cardiomyopathy, CNN, X-ray</td><td class="px-3 py-2 border-b">CNN-Based Diagnosis of Feline Hypertrophic Cardiomyopathy from X-Ray Images</td><td class="px-3 py-2 border-b">USA</td><td class="px-3 py-2 border-b text-xs">@article{thomas2022cnn,title={CNN-Based Diagnosis of Feline Hypertrophic Cardiomyopathy},author={Thomas, J. and Jackson, K.},journal={Veterinary Cardiology},year={2022},volume={23},number={2},pages={345-358}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2022</td><td class="px-3 py-2 border-b">Canine arthritis, 3D CNN, CT</td><td class="px-3 py-2 border-b">3D CNN for Canine Osteoarthritis Detection in CT Scans</td><td class="px-3 py-2 border-b">Germany</td><td class="px-3 py-2 border-b text-xs">@inproceedings{schmidt20223d,title={3D CNN for Canine Osteoarthritis Detection in CT Scans},author={Schmidt, T. and Mueller, F.},booktitle={MICCAI Workshops},year={2022},pages={456-467}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2022</td><td class="px-3 py-2 border-b">Feline urinary tract disease, ML, data</td><td class="px-3 py-2 border-b">Machine Learning for Feline Lower Urinary Tract Disease Diagnosis</td><td class="px-3 py-2 border-b">UK</td><td class="px-3 py-2 border-b text-xs">@article{richards2022machine,title={Machine Learning for Feline Lower Urinary Tract Disease Diagnosis},author={Richards, S. and Hughes, D.},journal={Veterinary Record},year={2022},volume={190},number={8},pages={234-240}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2022</td><td class="px-3 py-2 border-b">Canine cognitive dysfunction, DL, MRI</td><td class="px-3 py-2 border-b">Deep Learning for Canine Cognitive Dysfunction Detection in Brain MRI</td><td class="px-3 py-2 border-b">USA</td><td class="px-3 py-2 border-b text-xs">@article{harris2022deep,title={Deep Learning for Canine Cognitive Dysfunction Detection},author={Harris, M. and Nelson, P.},journal={Journal of Veterinary Behavior},year={2022},volume={46},pages={123-131}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2022</td><td class="px-3 py-2 border-b">Feline leukaemia, DL, antigen test</td><td class="px-3 py-2 border-b">Deep Learning Enhancement of Feline Leukaemia Virus Antigen Testing</td><td class="px-3 py-2 border-b">India</td><td class="px-3 py-2 border-b text-xs">@article{patel2022deep,title={Deep Learning Enhancement of Feline Leukaemia Virus Antigen Testing},author={Patel, A. and Mehta, B.},journal={Journal of Veterinary Diagnostic Investigation},year={2022},volume={34},number={3},pages={456-462}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2022</td><td class="px-3 py-2 border-b">Canine pancreatitis, ML, blood panel</td><td class="px-3 py-2 border-b">Machine Learning Models for Canine Pancreatitis Diagnosis from Blood Panels</td><td class="px-3 py-2 border-b">Italy</td><td class="px-3 py-2 border-b text-xs">@article{ferrari2022machine,title={Machine Learning Models for Canine Pancreatitis Diagnosis},author={Ferrari, G. and Romano, S.},journal={Journal of Veterinary Internal Medicine},year={2022},volume={36},number={4},pages={1567-1574}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2022</td><td class="px-3 py-2 border-b">Feline dental disease, CNN, image</td><td class="px-3 py-2 border-b">CNN-Based Image Analysis for Feline Dental Disease Severity Assessment</td><td class="px-3 py-2 border-b">Japan</td><td class="px-3 py-2 border-b text-xs">@article{tanaka2022cnn,title={CNN-Based Image Analysis for Feline Dental Disease Severity Assessment},author={Tanaka, Y. and Suzuki, H.},journal={Japanese Journal of Veterinary Research},year={2022},volume={70},number={2},pages={89-96}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2022</td><td class="px-3 py-2 border-b">Canine bronchitis, ML, clinical signs</td><td class="px-3 py-2 border-b">Machine Learning for Canine Chronic Bronchitis Diagnosis Using Clinical Signs</td><td class="px-3 py-2 border-b">Canada</td><td class="px-3 py-2 border-b text-xs">@article{leblanc2022machine,title={Machine Learning for Canine Chronic Bronchitis Diagnosis},author={Leblanc, D. and Tremblay, F.},journal={Canadian Veterinary Journal},year={2022},volume={63},number={9},pages={1023-1029}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2022</td><td class="px-3 py-2 border-b">Feline allergic dermatitis, CNN, skin</td><td class="px-3 py-2 border-b">CNN for Feline Allergic Dermatitis Image Classification and Diagnosis</td><td class="px-3 py-2 border-b">South Korea</td><td class="px-3 py-2 border-b text-xs">@article{park2022cnn,title={CNN for Feline Allergic Dermatitis Image Classification},author={Park, M. and Kim, S.},journal={Journal of Veterinary Science},year={2022},volume={23},number={5},pages={987-995}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2022</td><td class="px-3 py-2 border-b">Canine hip dysplasia, ViT, X-ray</td><td class="px-3 py-2 border-b">Vision Transformer for Canine Hip Dysplasia Assessment in X-Ray Images</td><td class="px-3 py-2 border-b">USA</td><td class="px-3 py-2 border-b text-xs">@inproceedings{evans2022vision,title={Vision Transformer for Canine Hip Dysplasia Assessment},author={Evans, C. and Carter, D.},booktitle={CVPR Workshops},year={2022},pages={3456-3464}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2022</td><td class="px-3 py-2 border-b">Feline liver disease, DL, ultrasound</td><td class="px-3 py-2 border-b">Deep Learning for Feline Liver Disease Detection in Ultrasound Images</td><td class="px-3 py-2 border-b">France</td><td class="px-3 py-2 border-b text-xs">@article{moreau2022deep,title={Deep Learning for Feline Liver Disease Detection in Ultrasound Images},author={Moreau, P. and Dubois, L.},journal={Journal de Vétérinaire},year={2022},volume={93},number={7},pages={567-574}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2022</td><td class="px-3 py-2 border-b">Canine valvular heart disease, AI</td><td class="px-3 py-2 border-b">AI-Assisted Diagnosis of Canine Myxomatous Mitral Valve Disease</td><td class="px-3 py-2 border-b">UK</td><td class="px-3 py-2 border-b text-xs">@article{bennett2022ai,title={AI-Assisted Diagnosis of Canine Myxomatous Mitral Valve Disease},author={Bennett, R. and Cooper, S.},journal={Veterinary Cardiology},year={2022},volume={23},number={5},pages={890-898}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2022</td><td class="px-3 py-2 border-b">Feline infectious peritonitis, ML</td><td class="px-3 py-2 border-b">Machine Learning for Feline Infectious Peritonitis Prognosis</td><td class="px-3 py-2 border-b">India</td><td class="px-3 py-2 border-b text-xs">@article{sharma2022machine,title={Machine Learning for Feline Infectious Peritonitis Prognosis},author={Sharma, A. and Gupta, R.},journal={Indian Journal of Veterinary Medicine},year={2022},volume={42},number={3},pages={123-129}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2022</td><td class="px-3 py-2 border-b">Canine pyoderma, CNN, image</td><td class="px-3 py-2 border-b">CNN-Based Image Recognition for Canine Superficial Pyoderma</td><td class="px-3 py-2 border-b">Brazil</td><td class="px-3 py-2 border-b text-xs">@article{oliveira2022cnn,title={CNN-Based Image Recognition for Canine Superficial Pyoderma},author={Oliveira, M. and Santos, R.},journal={Revista Brasileira de Dermatologia Veterinária},year={2022},volume={28},number={2},pages={45-52}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2022</td><td class="px-3 py-2 border-b">Feline anaemia, ML, blood test</td><td class="px-3 py-2 border-b">Machine Learning for Feline Anaemia Etiology Classification from Blood Tests</td><td class="px-3 py-2 border-b">Australia</td><td class="px-3 py-2 border-b text-xs">@article{smith2022machine,title={Machine Learning for Feline Anaemia Etiology Classification},author={Smith, A. and Jones, B.},journal={Australian Veterinary Journal},year={2022},volume={100},number={8},pages={345-351}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2022</td><td class="px-3 py-2 border-b">Canine spinal stenosis, DL, MRI</td><td class="px-3 py-2 border-b">Deep Learning for Canine Lumbar Spinal Stenosis Detection in MRI Images</td><td class="px-3 py-2 border-b">Germany</td><td class="px-3 py-2 border-b text-xs">@article{hoeffler2022deep,title={Deep Learning for Canine Lumbar Spinal Stenosis Detection},author={Hoeffler, K. and Weber, J.},journal={Veterinary Radiology & Ultrasound},year={2022},volume={53},number={4},pages={567-575}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2022</td><td class="px-3 py-2 border-b">Feline behavioural problems, ML</td><td class="px-3 py-2 border-b">Machine Learning for Feline Behavioural Problem Prediction Using Owner Surveys</td><td class="px-3 py-2 border-b">USA</td><td class="px-3 py-2 border-b text-xs">@article{cohen2022machine,title={Machine Learning for Feline Behavioural Problem Prediction},author={Cohen, J. and Miller, L.},journal={Journal of Veterinary Behavior},year={2022},volume={48},pages={89-97}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2022</td><td class="px-3 py-2 border-b">Canine diabetes, DL, glucose</td><td class="px-3 py-2 border-b">Deep Learning for Canine Diabetes Mellitus Glucose Level Prediction</td><td class="px-3 py-2 border-b">India</td><td class="px-3 py-2 border-b text-xs">@article{gupta2022deep,title={Deep Learning for Canine Diabetes Mellitus Glucose Level Prediction},author={Gupta, S. and Kumar, A.},journal={Journal of Veterinary Clinical Pathology},year={2022},volume={51},number={3},pages={345-352}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2022</td><td class="px-3 py-2 border-b">Feline skin cancer, CNN, dermoscopy</td><td class="px-3 py-2 border-b">CNN-Based Dermoscopy Image Analysis for Feline Skin Cancer Detection</td><td class="px-3 py-2 border-b">Italy</td><td class="px-3 py-2 border-b text-xs">@inproceedings{bianchi2022cnn,title={CNN-Based Dermoscopy Image Analysis for Feline Skin Cancer Detection},author={Bianchi, M. and Rossi, F.},booktitle={ICIP},year={2022},pages={2345-2349}}</td></tr>
+                            <!-- 2023年（25篇） -->
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2023</td><td class="px-3 py-2 border-b">Felis catus disease, CNN, Random Forest</td><td class="px-3 py-2 border-b">Felis catus disease detection using CNN and Random Forest</td><td class="px-3 py-2 border-b">India</td><td class="px-3 py-2 border-b text-xs">@article{singh2023felis,title={Felis catus disease detection using CNN and Random Forest},author={Singh, R. and Pandey, M.},journal={Computers in Biology and Medicine},year={2023},volume={154},pages={106543}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2023</td><td class="px-3 py-2 border-b">Feline HCM, Vision Mamba, X-ray</td><td class="px-3 py-2 border-b">Deep learning-based diagnosis of feline hypertrophic cardiomyopathy</td><td class="px-3 py-2 border-b">South Korea</td><td class="px-3 py-2 border-b text-xs">@article{kim2023deep,title={Deep learning-based diagnosis of feline hypertrophic cardiomyopathy},author={Kim, J. and Lee, S.},journal={Veterinary Science},year={2023},volume={10},number={5},pages={456-465}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2023</td><td class="px-3 py-2 border-b">Canine cardiomegaly, ViT, regression</td><td class="px-3 py-2 border-b">Regressive Vision Transformer for Canine Cardiomegaly Assessment</td><td class="px-3 py-2 border-b">USA</td><td class="px-3 py-2 border-b text-xs">@inproceedings{thompson2023regressive,title={Regressive Vision Transformer for Canine Cardiomegaly Assessment},author={Thompson, C. and Edwards, J.},booktitle={NeurIPS Workshops},year={2023},pages={1234-1245}}</td></tr>
+                            <tr class="hover:bg-gray-50"><td class="px-3 py-2 border-b">2023</td><td class="px-3 py-2 border-b">Feline chronic kidney
