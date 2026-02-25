@@ -108,6 +108,7 @@
     <section id="full-papers" class="mb-16 scroll-mt-20">
         <h2 class="text-2xl font-bold section-title flex items-center gap-2">
             <i class="fa-solid fa-table text-blue-600"></i> Complete Papers
+        </h2>
         <div class="bg-white rounded-xl shadow-sm p-4 md:p-6">
             <p class="text-sm text-gray-500 mb-4">基于原始表格逐条收录，包含年份、题目、作者单位(简略)、国家/地区及LaTeX引用。横向滚动可查看全部字段。</p>
             <div class="overflow-x-auto w-full border rounded-lg" style="max-height:600px; overflow-y:auto">
@@ -131,20 +132,32 @@
         </div>
     </section>
 
-    <!-- 代码与数据获取 (已修改，添加提示并防止404) -->
+    <!-- 代码与数据获取 (包含GitHub仓库链接和可视化独立页面链接) -->
     <section id="code" class="mb-12 scroll-mt-20">
         <h2 class="text-2xl font-bold section-title">Code & Data Access · 代码与数据</h2>
         <div class="bg-white rounded-xl p-6 shadow-sm flex flex-col items-center">
             <div class="w-full max-w-md">
+                <!-- GitHub 仓库链接 -->
                 <h3 class="text-xl font-semibold mb-4">🐙 GitHub 仓库</h3>
                 <p class="mb-4 text-gray-700">
-                    页面源码、数据处理脚本及可视化代码。欢迎 ⭐️ 贡献。<br>
-                    <span class="text-sm text-amber-600">⚠️ 注意：请将下面的链接中的 <code>your-username</code> 替换为您真实的GitHub用户名，并确保仓库名为 <code>AIDogCatPapers</code>。</span>
+                    页面源码、数据处理脚本及可视化代码。欢迎 ⭐️ 贡献。
                 </p>
                 <a href="https://github.com/Aldogcatpapers/Aldogcatpapers.github.io" target="_blank" class="inline-flex items-center gap-2 bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-gray-900 transition">
-    <i class="fa-brands fa-github"></i> GitHub Repo
-</a>
-                <p class="mt-3 text-xs text-gray-500">点击后请根据提示操作。如果您已设置好，请手动修改链接地址。</p>
+                    <i class="fa-brands fa-github"></i> GitHub Repo
+                </a>
+
+                <!-- 新增：可视化图表独立页面链接 -->
+                <div class="mt-8">
+                    <h3 class="text-xl font-semibold mb-4">📊 可视化图表</h3>
+                    <p class="mb-4 text-gray-700">
+                        查看完整的可视化图表页面（包含所有图表的独立展示）。
+                    </p>
+                    <a href="https://aldogcatpapers.github.io/index2.html" target="_blank" class="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                        <i class="fa-solid fa-chart-pie"></i> 查看可视化
+                    </a>
+                </div>
+
+                <p class="mt-3 text-xs text-gray-500">GitHub Pages 已启用，链接可直接访问。如果无法打开，请确保仓库已设置为公开且 Pages 服务已激活。</p>
             </div>
         </div>
     </section>
